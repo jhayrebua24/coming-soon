@@ -25,6 +25,7 @@ body {
 
 .container{
 	z-index: 9999;
+	width: 100%;
 }
 
 .container h1 {
@@ -33,6 +34,27 @@ body {
 	font-size: 87px;
 	line-height: 1.5;
 	letter-spacing: 0.4rem;
+	margin: 0;
+}
+
+.container img {
+	width: 16rem;
+	margin: 0 auto;
+	display: block;
+}
+
+.container img {
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+}
+
+.container img:hover {
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
 }
 
 .container::after {
