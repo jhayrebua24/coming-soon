@@ -25,20 +25,36 @@ body {
 .container{
 	z-index: 9999;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+#element {
+	flex-basis: 60%;
+	color: #3182CE;
+	font-size: 36px;
+	text-align: center;
+	width: 100%;
+	height: 20rem;
 }
 
 .container h1 {
 	color: #F7FAFC;
-	text-align: center;
 	font-size: 32px;
-	line-height: 1.5;
+	line-height: 1;
 	letter-spacing: 0.4rem;
-	margin: 0;
+	margin: 0 auto;
+	display: inline;
+	padding: 0;
 }
 
 .container img {
 	/*width: 16rem;*/
-	width: 12rem;
+	margin: 0;
+	padding: 0;
+	width: 14rem;
 	margin: 0 auto;
 	display: block;
 }
@@ -69,31 +85,50 @@ body {
 }
 
 @media(min-width: 678px) {
+	#element {
+		font-size: 72px;
+	}
+
 	.container h1 {
 		font-size: 48px;
+		line-height: 1.5;
 	}
 
 	.container img {
-		width: 14rem;
+		width: 16rem;
 	}
 }
 
 @media(min-width: 870px) {
+	.container {
+		flex-direction: row;
+	}
+
 	.container h1 {
 		font-size: 56px;
 	}
 
 	.container img {
-		width: 15rem;
+		width: 18rem;
 	}
 }
 
 @media(min-width: 997px) {
 	.container h1 {
-		font-size: 76px;
+		font-size: 61px;
 	}
 
 	.container img {
-		width: 16rem;
+		width: 20rem;
+	}
+}
+
+@media(min-width: 1200px) {
+	.container h1 {
+		font-size: 68px;
+	}
+
+	.container img {
+		width: 24rem;
 	}
 }
