@@ -9,7 +9,6 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	font-family: 'Rubik', sans-serif;
 }
 
 .coming-soon {
@@ -18,7 +17,7 @@ body {
 	background-image: url('bg.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
+	background-size: fit;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -37,30 +36,14 @@ body {
 .logo {
 	margin: 0;
 	padding: 0;
-	width: 17rem;
+	width: 18rem;
 	margin: 0 auto;
 }
 
-.container p {
-	padding: 0;
+.text {
 	margin: 0;
-	line-height: 0.9;
-}
-
-.title-when {
-	font-family: 'Dancing Script', cursive;
-	color: #FFFE0C;
-	font-size: 48px;
-}
-
-.title-company {
-	color: #fff;
-	font-size: 107px;
-}
-
-.title-what {
-	color: #298fe7;
-	font-size: 49px;
+	padding: 0;
+	width: 28rem;
 }
 
 .container::after {
